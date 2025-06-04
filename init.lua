@@ -17,37 +17,44 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+
+-- 	{ import = "plugins.telescope" },
+-- 	{ import = "plugins.nvim-treesitter" },
+-- 	{ import = "plugins.neo-tree" },
+-- 	{ import = "plugins.vim-sleuth" },
+-- 	{ import = "plugins.todo-comments" },
+-- 	{ import = "plugins.mini" },
+
+-- 	{ import = "plugins.which-key" },
+-- 	{ import = "plugins.gitsigns" },
+-- 	{ import = "plugins.indent_line" },
+
+-- 	{ import = "plugins.themes.switcheroo" },
 -- 	{ import = "plugins.themes.tokyonight" },
 -- 	{ import = "plugins.themes.catppuccin" },
+-- 	{ import = "plugins.themes.themery" },
+-- 	{ import = "plugins.themes.neko-night" },
+-- 	{ import = "plugins.themes.lush" },
 	-- NOTE: after setting a theme, add it to vim-options file
 
--- 	{ import = "plugins.42_header" },
+-- 	{ import = "plugins.42.42-header" },
+-- 	{ import = "plugins.42.42-norminette" },
 	-- NOTE: change to your username and email inside the plugin file
 
--- 	{ import = "plugins.vim-sleuth" },
--- 	{ import = "plugins.gitsigns" },
--- 	{ import = "plugins.which-key" },
--- 	{ import = "plugins.telescope" },
 -- 	{ import = "plugins.LSP.lazydev" },
 -- 	{ import = "plugins.LSP.nvim-lspconfig" },
 --	{ import = "plugins.LSP.nvim-cmp_autocompletion" },
 --	{ import = "plugins.LSP.conform_autoformat" },
--- 	{ import = "plugins.todo-comments" },
--- 	{ import = "plugins.mini" },
--- 	{ import = "plugins.nvim-treesitter" },
--- 	{ import = "plugins.neo-tree" },
---	{ import = "plugins.alpha" },
--- 	{ import = "plugins.snacks_dashboard" },
--- 	{ import = "plugins.indent_line" },
---	{ import = "plugins.health" },
--- 	{ import = "plugins.switcheroo" },
--- 	{ import = "plugins.lush" },
--- 	{ import = "plugins.persistence" },
--- 	{ import = "plugins.themery" },
+
 -- 	{ import = "plugins.AI.copilot" },
 -- 	{ import = "plugins.AI.copilotChat" },
--- 	{ import = "plugins.golf" },
--- 	{ import = "plugins.42_norminette" }
+
+-- 	{ import = "plugins.snacks_dashboard" },
+--	{ import = "plugins.alpha" },
+-- 	{ import = "plugins.persistence" },
+
+-- 	{ import = "plugins.golf" }
+--	{ import = "plugins.health" },
 }, {
 	ui = {
 	-- If you are using a Nerd Font: set icons to an empty table which will use the
