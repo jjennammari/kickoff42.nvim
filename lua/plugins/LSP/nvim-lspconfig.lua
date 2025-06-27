@@ -13,7 +13,7 @@ return{
       {"j-hui/fidget.nvim", opts = {} },
 
 		-- Allows extra capabilities provided by nvim-cmp
-		-- "hrsh7th/cmp-nvim-lsp",              WARNING:
+		-- "hrsh7th/cmp-nvim-lsp",  WARNING:
 	},
 	config = function()
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -183,6 +183,7 @@ return{
 		--  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
 		--  - settings (table): Override the default settings passed when initializing the server.
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+		-- NOTE: add your language servers here (under the local servers variable)
 		local servers = {
 			clangd = {},
 			-- gopls = {},

@@ -1,4 +1,4 @@
--- colorscheme
+-- colorscheme 
 -- vim.cmd.colorscheme("tokyonight-moon")
 
 -- numbers colors
@@ -16,13 +16,9 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Norme correct tab
---vim.opt.tabstop = 2
---vim.opt.shiftwidth = 2
---vim.opt.expandtab = true
---vim.opt.tabstop = 8
---vim.opt.shiftwidth = 8
---vim.opt.expandtab = false
+-- NOTE: 
+-- these options below are only relevant if you are writing C code 
+-- according to the "norminette" code norms set by 42 school
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -40,7 +36,6 @@ vim.schedule(function()
 end)
 
 -- Enable break indent
---  TODO: check what this option is
 vim.opt.breakindent = true
 
 -- Save undo history
@@ -64,9 +59,9 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
+-- uncommnent the 2 lines below if you want whitespaces to have character representations
 -- vim.opt.list = true
 -- vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
---  NOTE: uncommnent this if you want whitespaces to have character representations
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = "split"
@@ -80,23 +75,24 @@ vim.opt.scrolloff = 10
 -- [[ Plugin Keymaps ]]
 
 -- CopilotChat
-
 -- Keybind to open Copilot chat window
 vim.api.nvim_set_keymap('n', '<leader>cp', ':CopilotChatOpen<CR>', { noremap = true, silent = true })
 
 -- LSP
--- Keybind to enable virtual text for diagnostics
+-- Keybind to enable on-screen diagnostics
 vim.api.nvim_set_keymap('n', '<leader>lt', ':lua vim.diagnostic.config({virtual_text=true})<CR>', { noremap = true, silent = true })
 
 -- Keybind to disable virtual text for diagnostics
 vim.api.nvim_set_keymap('n', '<leader>lf', ':lua vim.diagnostic.config({virtual_text=false})<CR>', { noremap = true, silent = true })
+
+-- Diagnostic keymaps
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+
 -- [[ Basic Keymaps ]]
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
--- Diagnostic keymaps
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
 -- Exit terminal mode in the builtin terminal with 'ESC+ESC' instead of 'CTRL+\ CTRL+n'
 --  NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
