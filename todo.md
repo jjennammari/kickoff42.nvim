@@ -1,1 +1,0 @@
-- choose plugins to keep/delete
