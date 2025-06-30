@@ -1,4 +1,5 @@
--- colorscheme 
+-- manually LOAD colorscheme below
+-- colorscheme
 -- vim.cmd.colorscheme("tokyonight-moon")
 
 -- numbers colors
