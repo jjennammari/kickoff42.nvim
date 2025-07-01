@@ -113,8 +113,7 @@ These are additional dependencies that Neovim will need:
 
 ## Installing Kickoff42.nvim 
 
-this next part will be pretty much identical to kickstart's
-^ actually not.
+This next part will be pretty much the same as the one on kickstart.
 
 > [!NOTE]
 > [Backup](https://github.com/nvim-lua/kickstart.nvim/blob/master/README.md#FAQ) your previous configuration, if you have one
