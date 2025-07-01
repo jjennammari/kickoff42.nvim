@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This is a NeoVim template I created based on the work I did to my own NeoVim configuration, with the intent of being used in the 42School environment.
+This is a Neovim template I created based on the work I did to my own Neovim configuration, with the intent of being used in the 42School environment.
 
 You can of course use it outside of the 42 school environment (or even if you are not a 42 student), just ignore the 42 part of the installation and configuration.
 
-This is supposed to be a NeoVim template that is:
+This is supposed to be a Neovim template that is:
 
 - minimal
 - modular and easy to edit
@@ -28,11 +28,11 @@ During this guide I will always use Homebrew as a package manager (explanation b
 
 ## Installation @ 42 
 
-> **NOTE**
+> **[!NOTE]**
 > This installation was done for the 42Porto campus environment. You might have a different set of rules and regulations if you're in a different campus so take this into account.
 
 ### Homebrew
-**Homebrew** is the package manager we will use to install NeoVim and it's dependencies. Because we are not allowed to use `sudo` inside the 42 school environment, **Homebrew** is a good work-around to install and manage packages.
+**Homebrew** is the package manager we will use to install Neovim and it's dependencies. Because we are not allowed to use `sudo` inside the 42 school environment, **Homebrew** is a good work-around to install and manage packages.
 
 Homebrew will take quite a big chunk of the available space in our user's home directory, so we will install it on `sgoinfre/`. Mine is using ~2.8GB atm so not a lot for `sgoinfre`, but more than half of the available space in my user's home dir.
 
@@ -93,21 +93,70 @@ brew bundle dump --file=[path]/[to]/Brewfile
 ```
 to install packages from previous installation of Homebrew.
 
-## Installing NeoVim
+## Installing Neovim
 
-To install NeoVim just run:
+To install Neovim just run:
 ```
 brew install neovim
 ```
 
 ## External Dependencies
 
-These are additional dependencies that NeoVim will need:
-- ripgrep: `brew install ripgrep`
+These are additional dependencies that Neovim will need:
+- [ripgrep](https://github.com/BurntSushi/ripgrep#installation) | `brew install ripgrep`
+- [fd-find](https://github.com/sharkdp/fd#installation) | `probs bew install fd-find` TODO: here
 - a Nerd Font: optional, provides various icons
     - choose one from the [website](https://www.nerdfonts.com/)
-    - install it with `brew`
-    - set `vim.g.have_nerd_font` in `init.lua` to true;
+    - install it with `brew [nerd-font]`
+    - set `vim.g.have_nerd_font` in `init.lua` to **true**;
 - if you lack additional dependencies refer to the `kickstart_files/kickstart_README.md` file
 
-## Installing this 
+## Installing Kickoff42.nvim 
+
+this next part will be pretty much identical to kickstart's
+^ actually not.
+
+> **[!NOTE]**
+> [Backup](https://github.com/nvim-lua/kickstart.nvim/blob/master/README.md#FAQ) your previous configuration, if you have one
+
+#### Recommended Step
+
+[Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo
+so that you have your own copy that you can modify, then install by cloning the
+fork to your machine using one of the commands below, depending on your OS.
+
+> [!NOTE]
+> Your fork's URL will be something like this:
+> `https://github.com/<your_github_username>/kickoff42.nvim.git`
+> replace `Disvster` with `<your_github_username>` in the commands below
+
+```sh
+git clone https://github.com/Disvster/kickoff42.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+## Post Installation
+
+Run Neovim
+```
+nvim
+```
+and that's it! Hopefully everything went fine and you now have Lazy installing all the plugins.
+You can run `:Lazy` to view your current plugin status. Hit `q` or `:q` to close it's window.
+
+## Please Read the Documentation!
+
+`init.lua` has a small summary of what every plugin is doing and `lua/vim-options.lua` has most of the keybinds you'll wanna use regularly, so please take your time reading it! Some plugins have additional keybinds inside that you'll wanna know, like `42-norminette`.
+
+Make sure to change the 42 Header to your `user` and `mail` as well!
+
+You can read `kickstart_files/kickstart_init.lua` if you want more in-depth information.
+
+## Finishing notes
+
+This project wouldn't exist if it wasn't for my friends still using vim and my frustration seeing them not have the same tools I have at my disposal, aka being 3.54s slower than me writing code (it's a lot I swear).
+
+But in all seriousness I feel like the **syntax highlighting**, seamless **navigation** through code/codebases, **on-screen** **compiler** and **norminette warnings**, and even CoPilot chat, helped me a LOT in optimizing my workflow without compromising simplicity. 
+
+This doesn't aim to be a hand-holding config at all. I believe most AI and LSP tools do not help a begginner programmer, It's like learning how to ride a bike but never removing the training wheels off.
+
+Let me know if you have any doubts/issues and feel free to PM me on slack, my user is **manmaria**.
