@@ -19,7 +19,7 @@ This is very much inspired by [kickstart.nvim](https://github.com/nvim-lua/kicks
 **This is in no way associated with kickstart.nvim or it's creators.**
 I just used their work as a foundation for my own configuration and as inspiration for this project.
 
-I added inside `kickstart_docs/` 2 files from kickstart.nvim (the original README and init.lua) because everything is REALLY well documented and it might help you debug your config just like it helped me many times. When in doubt, try searching there.
+I added inside `kickstart_docs/` 2 files from kickstart.nvim (the original README and init.lua) because everything is REALLY well documented there and it might help you debug your config just like it helped me many times. When in doubt, try searching there.
 
 # GUIDE - Installation and Set-up
 
@@ -32,17 +32,17 @@ During this guide I will always use Homebrew as a package manager (explanation b
 > This installation was done for the 42Porto campus environment. You might have a different set of rules and regulations if you're in a different campus so take this into account.
 
 ### Homebrew
-**Homebrew** is the package manager we will use to install Neovim and it's dependencies. Because we are not allowed to use `sudo` inside the 42 school environment, **Homebrew** is a good work-around to install and manage packages.
+[Homebrew](https://brew.sh/) is the package manager we will use to install Neovim and it's dependencies. Because we are not allowed to use `sudo` inside the 42 school environment, **Homebrew** is a good work-around to install and manage packages.
 
 Homebrew will take quite a big chunk of the available space in our user's home directory, so we will install it on `sgoinfre/`. Mine is using ~2.8GB atm so not a lot for `sgoinfre`, but more than half of the available space in my user's home dir.
 
-### If you have Homebrew installed already - skip if this doesn't apply
+### Moving Homebrew installation - skip if you don't have it installed
 
 Run:
 ```
 brew bundle dump
 ``` 
-This will create `Brewfile`, which is a log of the packages you installed through Hombrew. Save the path to this file, we will use it to recover these packages later.
+This will create a `Brewfile`, which is a log of the packages you installed through Hombrew. Save the path to this file, we will use it to recover these packages later.
 
 Uninstall Homebrew:
 - use Homebrew's [unninstall script](https://github.com/homebrew/install#uninstall-homebrew) (safer)
@@ -56,7 +56,7 @@ rm -rf /path/to/Homebrew/
 
 Now we'll move the installation to `sgoinfre/`
 
----
+### Installing Homebrew
 
 Go to the `/sgoinfre/` directory:
 ```
