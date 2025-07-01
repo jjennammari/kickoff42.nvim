@@ -34,7 +34,7 @@ During this guide I will always use Homebrew as a package manager (explanation b
 ### Homebrew
 [Homebrew](https://brew.sh/) is the package manager we will use to install Neovim and it's dependencies. Because we are not allowed to use `sudo` inside the 42 school environment, **Homebrew** is a good work-around to install and manage packages.
 
-Homebrew will take quite a big chunk of the available space in our user's home directory, so we will install it on `sgoinfre/`. Mine is using ~2.8GB atm so not a lot for `sgoinfre`, but more than half of the available space in my user's home dir.
+Homebrew will take quite a big chunk of the available space in our user's home directory, so we will install it on `~/sgoinfre/`. Mine is using ~2.8GB atm so not a lot for `sgoinfre`, but more than half of the available space in my user's home dir.
 
 ### Moving Homebrew installation - skip if you don't have it installed
 
@@ -58,7 +58,7 @@ Now we'll move the installation to `sgoinfre/`
 
 ### Installing Homebrew
 
-Go to the `/sgoinfre/` directory:
+Go to the `sgoinfre/` directory:
 ```
 cd ~/sgoinfre
 ``` 
