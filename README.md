@@ -28,7 +28,7 @@ During this guide I will always use Homebrew as a package manager (explanation b
 
 ## Installation @ 42 
 
-> **[!NOTE]**
+> [!NOTE]
 > This installation was done for the 42Porto campus environment. You might have a different set of rules and regulations if you're in a different campus so take this into account.
 
 ### Homebrew
@@ -116,7 +116,7 @@ These are additional dependencies that Neovim will need:
 this next part will be pretty much identical to kickstart's
 ^ actually not.
 
-> **[!NOTE]**
+> [!NOTE]
 > [Backup](https://github.com/nvim-lua/kickstart.nvim/blob/master/README.md#FAQ) your previous configuration, if you have one
 
 #### Recommended Step
