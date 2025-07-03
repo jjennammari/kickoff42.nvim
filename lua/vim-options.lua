@@ -10,9 +10,6 @@ vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "yellow", bold = false })
 vim.api.nvim_set_hl(0, "Comment", { fg = "gray" })
 vim.api.nvim_set_hl(0, "@comment", { link = "Comment" })
 
--- true if Nerd Font installed
-vim.g.have_nerd_font = true
-
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
