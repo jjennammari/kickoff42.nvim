@@ -1,3 +1,12 @@
+# THIS IS STILL VERY MUCH A WIP!
+
+You can follow this guide but at your own risk.
+
+
+There are a lot of rough edges that are afecting the installation and set-up process. Need to run more tests with my coleagues (applications are open hihi).
+
+Will add a to-do list later.
+
 # kickoff42.nvim
 
 ## Introduction
