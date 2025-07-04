@@ -2,6 +2,7 @@
 
 You can follow this guide but at your own risk.
 
+run `:checkhealth` after the install to know the status of your set-up.
 
 There are a lot of rough edges that are affecting the installation and set-up process. Need to run more tests with my coleagues (applications for beta-testers are open hihi).
 
