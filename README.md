@@ -3,7 +3,7 @@
 You can follow this guide but at your own risk.
 
 
-There are a lot of rough edges that are afecting the installation and set-up process. Need to run more tests with my coleagues (applications are open hihi).
+There are a lot of rough edges that are affecting the installation and set-up process. Need to run more tests with my coleagues (applications for beta-testers are open hihi).
 
 Will add a to-do list later.
 
@@ -96,7 +96,7 @@ export INFOPATH="$HPREFIX/share/info:${INFOPATH:-}"
 # export HOMEBREW_NO_ENV_HINTS=1
 ```
 
-**If you unnistalled homebrew previously** (replace `[path]/[to]/`):
+**If you created the dump file** (replace `[path]/[to]/`):
 ```
 brew bundle dump --file=[path]/[to]/Brewfile
 ```
