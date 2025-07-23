@@ -1,3 +1,6 @@
+-- NOTE: Run `:checkhealth` to check if your system is set-up properly
+-- Not every warning is a 'must-fix' in `:checkhealth`
+
 -- Set <space> as the leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -57,8 +60,8 @@ require("lazy").setup({
 	{ import = "plugins.themes.theme-stash" },
 
 --	Dashboard Plugins:
-	{ import = "plugins.snacks" },
-	{ import = "plugins.persistence" },
+	{ import = "plugins.dashboard.snacks" },
+	{ import = "plugins.dashboard.persistence" },
 
 --	42 School Related Plugins:
 	{ import = "plugins.42.42-norminette" },
@@ -80,8 +83,9 @@ require("lazy").setup({
 --	{ import = "plugins.LSP.nvim-cmp_autocompletion" },
 
 --	AI Related Plugins:
-	{ import = "plugins.AI.copilot" },
-	-- modified version of the original copilot plugin
+	{ import = "plugins.AI.copilot" }, --
+	-- modified version of the original copilot plugin 
+	-- NOTE: run :Copilot setup, you need to sync your Copilot account with the plugin
 	{ import = "plugins.AI.copilotChat" }
 	-- CoPilot vscode-like chat window, check file and github on how to use
 
