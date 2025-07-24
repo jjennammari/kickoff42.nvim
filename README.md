@@ -114,6 +114,7 @@ to install packages from previous installation of Homebrew.
 
 > [!NOTE]
 > installing Neovim might take a while if you are using a custom install path for Hombrew, like my guide above
+>
 > It will take ~10 minutes, don't be discouraged
 
 To install Neovim just run (skip if you installed neovim through the `brew bundle` command above):
