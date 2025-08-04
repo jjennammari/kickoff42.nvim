@@ -85,7 +85,7 @@ require("lazy").setup({
 --	AI Related Plugins:
 	{ import = "plugins.AI.copilot" }, --
 	-- modified version of the original copilot plugin 
-	-- NOTE: run :Copilot setup, you need to sync your Copilot account with the plugin
+	-- NOTE: run `:Copilot auth` to to sync your Copilot account with the plugin
 	{ import = "plugins.AI.copilotChat" }
 	-- CoPilot vscode-like chat window, check file and github on how to use
 
