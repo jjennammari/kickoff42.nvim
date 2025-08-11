@@ -88,6 +88,7 @@ export HOMEBREW_PREFIX="$HPREFIX"
 export HOMEBREW_CELLAR="$HPREFIX/Cellar"
 export HOMEBREW_CACHE="$HPREFIX/Cache"
 export HOMEBREW_TEMP="$HPREFIX/Temp"
+export HOMEBREW_LOGS="$HOMEBREW_CACHE/Logs"
 export HOMEBREW_REPOSITORY="$HPREFIX/Homebrew"
 export HOMEBREW_CASK_OPTS='${HOME}/Applications'
 export PATH="$HPREFIX/bin:$HPREFIX/sbin:/home/${HOME}/.local/bin${PATH+:$PATH}"
