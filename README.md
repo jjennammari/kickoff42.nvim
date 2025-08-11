@@ -81,7 +81,7 @@ We also have to create a `Cache` and `Temp` directories inside the homebrew fold
 cd ~/sgoinfre/homebrew
 mkdir Cache && mkdir Temp
 ```
-Then, add these lines in your `.zshrc` or `.bashrc`, MAKE SURE TO REPLACE [YOUR USER] with your user:
+Then, add these lines in your `.zshrc` or `.bashrc`:
 ```
 HPREFIX="${HOME}/sgoinfre/homebrew"
 export HOMEBREW_PREFIX="$HPREFIX"
@@ -90,17 +90,17 @@ export HOMEBREW_CACHE="$HPREFIX/Cache"
 export HOMEBREW_TEMP="$HPREFIX/Temp"
 export HOMEBREW_REPOSITORY="$HPREFIX/Homebrew"
 export HOMEBREW_CASK_OPTS='${HOME}/Applications'
-export PATH="$HPREFIX/bin:$HPREFIX/sbin:/home/[YOUR USER]/.local/bin${PATH+:$PATH}"
+export PATH="$HPREFIX/bin:$HPREFIX/sbin:/home/${HOME}/.local/bin${PATH+:$PATH}"
 export MANPATH="$HPREFIX/share/man${MANPATH+:$MANPATH}:"
 export INFOPATH="$HPREFIX/share/info:${INFOPATH:-}"
 # export HOMEBREW_NO_ANALYTICS=1
 # export HOMEBREW_NO_ENV_HINTS=1
 ```
 
-For `fish`, create or edit the `/home/[YOUR USER]/.config/fish/functions/brew.fish` to be, MAKE SURE TO REPLACE [YOUR USER] with your user:
+For `fish`, create or edit the `/home/[YOUR USER]/.config/fish/functions/brew.fish` to be:
 ```
-function brew --wraps=/home/[YOUR USER]/sgoinfre/homebrew/bin/brew --description 'alias brew=/home/[YOUR USER]/sgoinfre/homebrew/bin/brew'
-  /home/[YOUR USER]/sgoinfre/homebrew/bin/brew $argv;
+function brew --wraps=/home/${HOME}/sgoinfre/homebrew/bin/brew --description 'alias brew=/home/${HOME}/sgoinfre/homebrew/bin/brew'
+  /home/${HOME}/sgoinfre/homebrew/bin/brew $argv;
 end
 ```
 
