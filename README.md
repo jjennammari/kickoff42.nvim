@@ -8,12 +8,12 @@ The **Neovim** config I have here remains unaffected and working and I plan on i
 
 ## After installing this config for the first time, please:
 
-### run `:checkhealth` to know the status of your set-up
+- ### run `:checkhealth` to know the status of your set-up
 
-This will help debug any errors you might be having, e.g.: missing dependencies.
+This will help debug any errors you might be having, like missing dependencies.
 Feel free to PM me (or open an issue) if have any errors you are not able to solve.
 
-### press `<space><s><k>`
+- ### press `<space><s><k>`
 
 This will open a pop-up window with all the keybinds you have at your disposal. 
 
