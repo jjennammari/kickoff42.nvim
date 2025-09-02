@@ -2,9 +2,9 @@
 
 **42Porto no longers accepts files in `sgoinfre/` that are not related to a project's VM or 42-Advanced!**
 
-This means that you have to manually install neovim and it's dependencies. I recommend going to Neovim, fd-find and ripgrep repos and downloading and extracting the `.tar` files, and placing its contents where they should be in your home dir. This isn't hard and I plan on writing a script that will automate this in the future, and placing here in this repo.
+This means that you have to manually install neovim and it's dependencies. I recommend going to **Neovim**, **fd-find** and **ripgrep** repos and downloading and extracting the `.tar` files, then placing its contents where they should be in your home dir. This isn't hard but I plan on writing a script that will automate this process in the future. It will be part of this repo.
 
-The **Neovim** config I have here is unaffected and already works, and I will keep improving it.
+The **Neovim** config I have here remains unaffected and working and I plan on improving it when I feel the need to.
 
 ## After installing this config for the first time, please:
 
