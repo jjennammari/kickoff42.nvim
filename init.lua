@@ -6,7 +6,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 --  NOTE: set true if a Nerd Font is installed
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -49,6 +49,7 @@ require("lazy").setup({
 	{ import = "plugins.utils.which-key" },
 	-- great plugin if you're still learning neovim keybinds,
 	-- shows you follow-up keystrokes based what key you pressed first
+	{ import = "plugins.utils.spectre"},
 
 --	Theme Related Plugins:
 --	if you want to add a theme to the theme-stash file so you can modify it
@@ -83,10 +84,10 @@ require("lazy").setup({
 --	{ import = "plugins.LSP.nvim-cmp_autocompletion" },
 
 --	AI Related Plugins:
-	{ import = "plugins.AI.copilot" }, --
+	-- { import = "plugins.AI.copilot" }, --
 	-- modified version of the original copilot plugin 
 	-- NOTE: run `:Copilot auth` to to sync your Copilot account with the plugin
-	{ import = "plugins.AI.copilotChat" }
+	-- { import = "plugins.AI.copilotChat" }
 	-- CoPilot vscode-like chat window, check file and github on how to use
 
 }, {
